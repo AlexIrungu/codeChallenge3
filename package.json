@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexIrungu/codeChallenjge3.git"
+    "url": "git+https://github.com/AlexIrungu/codeChallenge3.git"
   },
   "author": "Alex Irungu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexIrungu/codeChallenjge3/issues"
+    "url": "https://github.com/AlexIrungu/codeChallenge3/issues"
   },
-  "homepage": "https://github.com/AlexIrungu/codeChallenjge3#readme"
+  "homepage": "https://github.com/AlexIrungu/codeChallenge3#readme"
 }

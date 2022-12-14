@@ -17,7 +17,7 @@ function fetchMovies(URL){
 //function to display the titles of the movies as a list
 function displayMovie(movie){
     const list = document.createElement('li')
-    list.style.cursor="cell"
+    list.style.cursor="flex"
     list.textContent= (movie.title)
     listHolder.appendChild(list)
     addClickEvent()
@@ -41,7 +41,7 @@ function addClickEvent(){
 //Posting the movie details
 // the poster to be dispalyed on the div with poster id
 function setUpMovieDetails(funMovie){
-    const preview = document.getElementById('poster')
+    const preview = document.getElementById('movie-poster')
     preview.src = funMovie.poster;
 //title
     const movieTitle = document.querySelector('#title');
