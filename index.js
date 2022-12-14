@@ -71,3 +71,31 @@ const btn = document.getElementById('buy-ticket')
                 btn.textContent = 'Sold Out'
             }
     })
+ //
+// function displayFirstMovie(loadFirstMovie){
+//     const preview = document.getElementById('movie-poster')
+//     preview.src = loadFirstMovie.poster;
+// //title
+//     const movieTitle = document.querySelector('#title');
+//     movieTitle.textContent = loadFirstMovie.title;
+//     //runtime
+//     const movieTime = document.querySelector('#runtime');
+//     movieTime.textContent = `${loadFirstMovie.runtime} minutes`;
+//     //description
+//     const movieDescription = document.querySelector('#film-info');
+//     movieDescription.textContent = loadFirstMovie.description;
+//     //Showtime
+//     const showTime = document.querySelector('#showtime')
+//     showTime.textContent = loadFirstMovie.showtime;
+//     // available tickets =capacity - tickets sold
+//     const tickets  = document.querySelector('#ticket-number')
+//     tickets.textContent = loadFirstMovie.capacity -funMovie.tickets_sold;
+// }
+
+// function loadFirstMovie(nameMovie){
+//     fetch(url)
+//         .then(res=>res.json())
+//         .then((data)=>{
+            
+//         })
+// }
