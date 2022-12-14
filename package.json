@@ -1,0 +1,20 @@
+{
+  "name": "codechallenge3",
+  "version": "1.0.0",
+  "description": "WK3 Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexIrungu/codeChallenjge3.git"
+  },
+  "author": "Alex Irungu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexIrungu/codeChallenjge3/issues"
+  },
+  "homepage": "https://github.com/AlexIrungu/codeChallenjge3#readme"
+}
