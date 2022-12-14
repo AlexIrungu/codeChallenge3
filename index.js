@@ -1,12 +1,12 @@
-let URL = 'http://localhost:3000/films'
+const url = 'http://localhost:3000/films'
 const listHolder = document.getElementById('films')
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementsByClassName('film item')[0].remove()
-    fetchMovies(URL)
+    fetchMovies(url)
 })
 //Create fetch function to get the data from the db.json
-function fetchMovies(URL){
-    fetch(URL)
+function fetchMovies(url){
+    fetch(url)
     .then(resp => resp.json())
     .then(movies => {
         movies.forEach(movie => {
@@ -29,7 +29,7 @@ function addClickEvent(){
         let child=children[i]
         // console.log(child) <= to check if have the right child
         child.addEventListener('click',() => {
-            fetch(`${URL}/${i+1}`)
+            fetch(`${url}/${i+1}`)
             .then(res => res.json())
             .then(movie => {
                 document.getElementById('buy-ticket').textContent = 'Buy Ticket'
