@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/films'
+const url = 'https://alexirungu.github.io/server/db.json'
 const listHolder = document.getElementById('films')
 document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementsByClassName('film-item')[0].remove()
@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //Create fetch function to get the data from the db.json
 function fetchMovies(url){
     fetch(url)
-    .then(resp => resp.json())
+    .then(res => res.json())
     .then(movies => {
-        movies.forEach(movie => {
+        movies.films.forEach(movie => {
             displayMovie(movie)
         });
     })
@@ -29,11 +29,11 @@ function addClickEvent(){
         let child=children[i]
         // console.log(child) => to check if have the right child
         child.addEventListener('click',() => {
-            fetch(`${url}/${i+1}`)
+            fetch(`${url}`)
             .then(res => res.json())
             .then(movie => {
                 document.getElementById('buy-ticket').textContent = 'Buy Ticket'
-                setUpMovieDetails(movie)
+                setUpMovieDetails(movie.films[i])
             })
         })
     }

@@ -13,11 +13,14 @@ The work involved obtaining data from a JSON service and displaying it on a webp
 ## Installation
 # Option one 
 If you want to see this app running directly, you can just click on this link
-  `alexirungu.github.io/codeChallenge3/`
+        
+        alexirungu.github.io/codeChallenge3/
 
 # Option Two
 * open command line terminal and clone the repository
-    - `git@github.com:AlexIrungu/codeChallenge3.git`
+        
+        git@github.com:AlexIrungu/codeChallenge3.git
+        
 * change the directory to the repository folder
     - cd codeChallenge3
 * then open VS Code using the command 
